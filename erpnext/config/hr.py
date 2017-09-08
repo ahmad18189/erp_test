@@ -4,31 +4,31 @@ from frappe import _
 def get_data():
 	return [
 		{
-			"label": _("Employee and Attendance"),
+			"label": _("Employee"),
 			"items": [
 				{
 					"type": "doctype",
 					"name": "Employee",
 					"description": _("Employee records."),
 				},
-				{
-					"type": "doctype",
-					"name": "Employee Attendance Tool",
-					"label": _("Employee Attendance Tool"),
-					"description":_("Mark Attendance for multiple employees"),
-					"hide_count": True
-				},
-				{
-					"type": "doctype",
-					"name": "Attendance",
-					"description": _("Attendance record."),
-				},
-				{
-					"type": "doctype",
-					"name": "Upload Attendance",
-					"description":_("Upload attendance from a .csv file"),
-					"hide_count": True
-				},
+#				{
+#					"type": "doctype",
+#					"name": "Employee Attendance Tool",
+#					"label": _("Employee Attendance Tool"),
+#					"description":_("Mark Attendance for multiple employees"),
+#					"hide_count": True
+#				},
+#				{
+#					"type": "doctype",
+#					"name": "Attendance",
+#					"description": _("Attendance record."),
+#				},
+#				{
+#					"type": "doctype",
+#					"name": "Upload Attendance",
+#					"description":_("Upload attendance from a .csv file"),
+#					"hide_count": True
+#				},
 			]
 		},
 		{
@@ -173,23 +173,23 @@ def get_data():
 				},
 			]
 		},
-		{
-			"label": _("Training"),
-			"items": [
-				{
-					"type": "doctype",
-					"name": "Training Event"
-				},
-				{
-					"type": "doctype",
-					"name": "Training Result"
-				},
-				{
-					"type": "doctype",
-					"name": "Training Feedback"
-				},
-			]
-		},
+#		{
+#			"label": _("Training"),
+#			"items": [
+#				{
+#					"type": "doctype",
+#					"name": "Training Event"
+#				},
+#				{
+#					"type": "doctype",
+#					"name": "Training Result"
+#				},
+#				{
+#					"type": "doctype",
+#					"name": "Training Feedback"
+#				},
+#			]
+#		},
 
 		{
 			"label": _("Fleet Management"),
@@ -287,30 +287,30 @@ def get_data():
 
 			]
 		},
-		{
-			"label": _("Help"),
-			"icon": "fa fa-facetime-video",
-			"items": [
-				{
-					"type": "help",
-					"label": _("Setting up Employees"),
-					"youtube_id": "USfIUdZlUhw"
-				},
-				{
-					"type": "help",
-					"label": _("Leave Management"),
-					"youtube_id": "fc0p_AXebc8"
-				},
-				{
-					"type": "help",
-					"label": _("Expense Claims"),
-					"youtube_id": "5SZHJF--ZFY"
-				},
-				{
-					"type": "help",
-					"label": _("Processing Payroll"),
-					"youtube_id": "apgE-f25Rm0"
-				},
-			]
-		}
+#		{
+#			"label": _("Help"),
+#			"icon": "fa fa-facetime-video",
+#			"items": [
+#				{
+#					"type": "help",
+#					"label": _("Setting up Employees"),
+#					"youtube_id": "USfIUdZlUhw"
+#				},
+#				{
+#					"type": "help",
+#					"label": _("Leave Management"),
+#					"youtube_id": "fc0p_AXebc8"
+#				},
+#				{
+#					"type": "help",
+#					"label": _("Expense Claims"),
+#					"youtube_id": "5SZHJF--ZFY"
+#				},
+#				{
+#					"type": "help",
+#					"label": _("Processing Payroll"),
+#					"youtube_id": "apgE-f25Rm0"
+#				},
+#			]
+#		}
 	]
