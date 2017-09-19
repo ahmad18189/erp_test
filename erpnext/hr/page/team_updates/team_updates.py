@@ -9,7 +9,7 @@ def get_data(start=0):
 	#frappe.only_for('Employee', 'System Manager')
 	data = frappe.get_all('Communication',
 		fields=('content', 'text_content', 'sender', 'creation'),
-		filters=dict(reference_doctype='Daily Work Summary'),
+		#~ filters=dict(reference_doctype='Daily Work Summary'),
 		order_by='creation desc', limit=40, start=start)
 
 	for d in data:

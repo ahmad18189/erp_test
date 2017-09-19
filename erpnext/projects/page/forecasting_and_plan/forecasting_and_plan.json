@@ -1,0 +1,29 @@
+{
+ "content": null, 
+ "creation": "2017-09-09 08:00:19.041194", 
+ "docstatus": 0, 
+ "doctype": "Page", 
+ "idx": 0, 
+ "modified": "2017-09-13 16:43:59.074963", 
+ "modified_by": "Administrator", 
+ "module": "Projects", 
+ "name": "forecasting-and-plan", 
+ "owner": "Administrator", 
+ "page_name": "Forecasting and Planning", 
+ "roles": [
+  {
+   "role": "Projects Manager"
+  }, 
+  {
+   "role": "Projects User"
+  }, 
+  {
+   "role": "Employee"
+  }
+ ], 
+ "script": null, 
+ "standard": "Yes", 
+ "style": null, 
+ "system_page": 0, 
+ "title": "Forecasting and Planning"
+}

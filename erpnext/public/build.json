@@ -1,12 +1,15 @@
 {
     "css/erpnext.css": [
-        "public/css/erpnext.css"
+        "public/css/erpnext.css",
+        "public/css/dhtmlxgantt.css"
     ],
     "js/erpnext-web.min.js": [
         "public/js/website_utils.js",
         "public/js/shopping_cart.js"
     ],
     "js/erpnext.min.js": [
+        "public/js/loader.js",
+        "public/js/dhtmlxgantt.js",
         "public/js/conf.js",
         "public/js/utils.js",
         "public/js/queries.js",

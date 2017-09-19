@@ -48,7 +48,7 @@ def get_data():
 					"type": "doctype",
 					"name": "Activity Cost",
 					"description": _("Cost of various activities"),
-				},
+				}
 			]
 		},
 		{
@@ -67,6 +67,11 @@ def get_data():
 					"name": "Project wise Stock Tracking",
 					"doctype": "Project"
 				},
+				{
+					"type": "page",
+					"name": "forecasting-and-plan",
+					"label": _("Forecasting and Planning"),
+				}
 			]
 		},
 		{
