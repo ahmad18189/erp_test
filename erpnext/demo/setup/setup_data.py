@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 from __future__ import print_function, unicode_literals
+=======
+from __future__ import unicode_literals
+>>>>>>> 95d706d57b6cac6113b64196e32dafd821e302b7
 
 import random, json
 import frappe, erpnext
@@ -42,7 +46,11 @@ def setup(domain):
 	frappe.clear_cache()
 
 def complete_setup(domain='Manufacturing'):
+<<<<<<< HEAD
 	print("Complete Setup...")
+=======
+	print "Complete Setup..."
+>>>>>>> 95d706d57b6cac6113b64196e32dafd821e302b7
 	from frappe.desk.page.setup_wizard.setup_wizard import setup_complete
 
 	if not frappe.get_all('Company', limit=1):

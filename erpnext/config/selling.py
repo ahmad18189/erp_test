@@ -12,11 +12,19 @@ def get_data():
 					"name": "Quotation",
 					"description": _("Quotes to Leads or Customers."),
 				},
+<<<<<<< HEAD
 				{
 					"type": "doctype",
 					"name": "Sales Order",
 					"description": _("Confirmed orders from Customers."),
 				},
+=======
+				# {
+				# 	"type": "doctype",
+				# 	"name": "Sales Order",
+				# 	"description": _("Confirmed orders from Customers."),
+				# },
+>>>>>>> 95d706d57b6cac6113b64196e32dafd821e302b7
 			]
 		},
 		{
@@ -303,6 +311,7 @@ def get_data():
 				},
 			]
 		},
+<<<<<<< HEAD
 		{
 			"label": _("Help"),
 			"items": [
@@ -323,4 +332,26 @@ def get_data():
 				},
 			]
 		},
+=======
+		# {
+		# 	"label": _("Help"),
+		# 	"items": [
+		# 		{
+		# 			"type": "help",
+		# 			"label": _("Customer and Supplier"),
+		# 			"youtube_id": "anoGi_RpQ20"
+		# 		},
+		# 		{
+		# 			"type": "help",
+		# 			"label": _("Sales Order to Payment"),
+		# 			"youtube_id": "7AMq4lqkN4A"
+		# 		},
+		# 		{
+		# 			"type": "help",
+		# 			"label": _("Point-of-Sale"),
+		# 			"youtube_id": "4WkelWkbP_c"
+		# 		},
+		# 	]
+		# },
+>>>>>>> 95d706d57b6cac6113b64196e32dafd821e302b7
 	]

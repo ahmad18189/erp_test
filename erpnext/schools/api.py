@@ -63,7 +63,11 @@ def mark_attendance(students_present, students_absent, course_schedule=None, stu
 	:param student_group: Student Group.
 	:param date: Date.
 	"""
+<<<<<<< HEAD
 
+=======
+	 
+>>>>>>> 95d706d57b6cac6113b64196e32dafd821e302b7
 	present = json.loads(students_present)
 	absent = json.loads(students_absent)
 	

@@ -1,7 +1,11 @@
 # Copyright (c) 2013, Frappe Technologies Pvt. Ltd. and Contributors
 # License: GNU General Public License v3. See license.txt
 
+<<<<<<< HEAD
 from __future__ import print_function, unicode_literals
+=======
+from __future__ import unicode_literals
+>>>>>>> 95d706d57b6cac6113b64196e32dafd821e302b7
 import frappe
 from frappe.utils import cstr
 
@@ -33,7 +37,11 @@ def execute():
 				(pi.name, company.expenses_included_in_valuation))
 
 			if gle_for_expenses_included_in_valuation:
+<<<<<<< HEAD
 				print(pi.name)
+=======
+				print pi.name
+>>>>>>> 95d706d57b6cac6113b64196e32dafd821e302b7
 
 				frappe.db.sql("""delete from `tabGL Entry`
 					where voucher_type='Purchase Invoice' and voucher_no=%s""", pi.name)

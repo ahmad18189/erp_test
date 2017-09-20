@@ -118,6 +118,7 @@ erpnext/stock/doctype/stock_reconciliation/test_stock_reconciliation.js
 erpnext/accounts/doctype/payment_entry/tests/test_payment_entry.js
 erpnext/selling/doctype/quotation/tests/test_quotation_submit_cancel_amend.js
 erpnext/stock/doctype/batch/test_batch.js
+<<<<<<< HEAD
 erpnext/accounts/doctype/bank_reconciliation/test_bank_reconciliation.js
 erpnext/stock/doctype/stock_entry/tests/test_stock_entry_for_material_receipt_for_serialize_item.js
 erpnext/stock/doctype/stock_entry/tests/test_stock_entry_for_material_transfer_for_manufacture.js
@@ -125,3 +126,6 @@ erpnext/stock/doctype/stock_entry/tests/test_stock_entry_for_subcontract.js
 erpnext/stock/doctype/stock_entry/tests/test_stock_entry_for_material_issue_with_serialize_item.js
 erpnext/stock/doctype/stock_entry/tests/test_stock_entry_for_repack.js
 erpnext/accounts/doctype/sales_invoice/tests/test_sales_invoice_with_serialize_item.js
+=======
+erpnext/accounts/doctype/bank_reconciliation/test_bank_reconciliation.js
+>>>>>>> 95d706d57b6cac6113b64196e32dafd821e302b7

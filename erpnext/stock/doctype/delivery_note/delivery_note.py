@@ -92,9 +92,15 @@ class DeliveryNote(SellingController):
 	def so_required(self):
 		"""check in manage account if sales order required or not"""
 		if frappe.db.get_value("Selling Settings", None, 'so_required') == 'Yes':
+<<<<<<< HEAD
 			for d in self.get('items'):
 				if not d.against_sales_order:
 					frappe.throw(_("Sales Order required for Item {0}").format(d.item_code))
+=======
+			 for d in self.get('items'):
+				 if not d.against_sales_order:
+					 frappe.throw(_("Sales Order required for Item {0}").format(d.item_code))
+>>>>>>> 95d706d57b6cac6113b64196e32dafd821e302b7
 
 	def validate(self):
 		self.validate_posting_time()

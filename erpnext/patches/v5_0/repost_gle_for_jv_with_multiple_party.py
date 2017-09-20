@@ -1,7 +1,11 @@
 # Copyright (c) 2013, Web Notes Technologies Pvt. Ltd. and Contributors
 # License: GNU General Public License v3. See license.txt
 
+<<<<<<< HEAD
 from __future__ import print_function, unicode_literals
+=======
+from __future__ import unicode_literals
+>>>>>>> 95d706d57b6cac6113b64196e32dafd821e302b7
 import frappe
 
 def execute():
@@ -21,6 +25,10 @@ def execute():
 		je.make_gl_entries()
 		
 	if je_list:
+<<<<<<< HEAD
 		print(je_list)
+=======
+		print je_list
+>>>>>>> 95d706d57b6cac6113b64196e32dafd821e302b7
 		
 		

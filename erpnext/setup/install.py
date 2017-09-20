@@ -1,7 +1,11 @@
 # Copyright (c) 2015, Frappe Technologies Pvt. Ltd. and Contributors
 # License: GNU General Public License v3. See license.txt
 
+<<<<<<< HEAD
 from __future__ import print_function, unicode_literals
+=======
+from __future__ import unicode_literals
+>>>>>>> 95d706d57b6cac6113b64196e32dafd821e302b7
 
 import frappe
 from frappe import _
@@ -19,10 +23,17 @@ def after_install():
 
 def check_setup_wizard_not_completed():
 	if frappe.db.get_default('desktop:home_page') == 'desktop':
+<<<<<<< HEAD
 		print()
 		print("ERPNext can only be installed on a fresh site where the setup wizard is not completed")
 		print("You can reinstall this site (after saving your data) using: bench --site [sitename] reinstall")
 		print()
+=======
+		print
+		print "ERPNext can only be installed on a fresh site where the setup wizard is not completed"
+		print "You can reinstall this site (after saving your data) using: bench --site [sitename] reinstall"
+		print
+>>>>>>> 95d706d57b6cac6113b64196e32dafd821e302b7
 		return False
 
 def set_single_defaults():

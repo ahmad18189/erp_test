@@ -4,7 +4,11 @@
 """
 Import chart of accounts from OpenERP sources
 """
+<<<<<<< HEAD
 from __future__ import print_function, unicode_literals
+=======
+from __future__ import unicode_literals
+>>>>>>> 95d706d57b6cac6113b64196e32dafd821e302b7
 
 import os, json
 import ast
@@ -229,7 +233,11 @@ def make_charts():
 
 		filename = src["id"][5:] + "_" + chart_id
 
+<<<<<<< HEAD
 		print("building " + filename)
+=======
+		print "building " + filename
+>>>>>>> 95d706d57b6cac6113b64196e32dafd821e302b7
 		chart = {}
 		chart["name"] = src["name"]
 		chart["country_code"] = src["id"][5:]

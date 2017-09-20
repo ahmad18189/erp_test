@@ -13,9 +13,15 @@
   margin: -10px auto;
 }
 .erpnext-icon {
+<<<<<<< HEAD
   width: 24px;
   margin-right: 0px;
   margin-top: -3px;
+=======
+  width: 80px;
+  margin-right: 0px;
+  margin-top: -14px;
+>>>>>>> 95d706d57b6cac6113b64196e32dafd821e302b7
 }
 .dashboard-list-item {
   background-color: inherit;

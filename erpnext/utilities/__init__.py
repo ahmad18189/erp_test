@@ -1,5 +1,9 @@
 ## temp utility
+<<<<<<< HEAD
 from __future__ import print_function
+=======
+
+>>>>>>> 95d706d57b6cac6113b64196e32dafd821e302b7
 import frappe
 from erpnext.utilities.activation import get_level
 from frappe.utils import cstr
@@ -12,7 +16,11 @@ def update_doctypes():
 
 		for f in dt.fields:
 			if f.fieldname == d.fieldname and f.fieldtype in ("Text", "Small Text"):
+<<<<<<< HEAD
 				print(f.parent, f.fieldname)
+=======
+				print f.parent, f.fieldname
+>>>>>>> 95d706d57b6cac6113b64196e32dafd821e302b7
 				f.fieldtype = "Text Editor"
 				dt.save()
 				break

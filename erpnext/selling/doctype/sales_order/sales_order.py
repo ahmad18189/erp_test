@@ -51,9 +51,15 @@ class SalesOrder(SellingController):
 		# validate p.o date v/s delivery date
 		if self.po_date:
 			for d in self.get("items"):
+<<<<<<< HEAD
 				if d.delivery_date and getdate(self.po_date) > getdate(d.delivery_date):
 					frappe.throw(_("Row #{0}: Expected Delivery Date cannot be before Purchase Order Date")
 						.format(d.idx))
+=======
+				 if d.delivery_date and getdate(self.po_date) > getdate(d.delivery_date):
+					 frappe.throw(_("Row #{0}: Expected Delivery Date cannot be before Purchase Order Date")
+					 	.format(d.idx))
+>>>>>>> 95d706d57b6cac6113b64196e32dafd821e302b7
 
 		if self.po_no and self.customer:
 			so = frappe.db.sql("select name from `tabSales Order` \

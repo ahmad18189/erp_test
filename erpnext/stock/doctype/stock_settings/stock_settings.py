@@ -18,7 +18,11 @@ class StockSettings(Document):
 			self.get("item_naming_by")=="Naming Series", hide_name_field=True)
 
 		stock_frozen_limit = 356
+<<<<<<< HEAD
 		submitted_stock_frozen = self.stock_frozen_upto_days or 0
+=======
+		submitted_stock_frozen = self.stock_frozen_upto_days
+>>>>>>> 95d706d57b6cac6113b64196e32dafd821e302b7
 		if submitted_stock_frozen > stock_frozen_limit:
 			self.stock_frozen_upto_days = stock_frozen_limit
 			frappe.msgprint (_("`Freeze Stocks Older Than` should be smaller than %d days.") %stock_frozen_limit)

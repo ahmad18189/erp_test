@@ -320,7 +320,12 @@ def make_invoice(doc_list={}, email_queue_list={}, customers_list={}):
 				si_doc.set_posting_time = 1
 				si_doc.customer = get_customer_id(doc)
 				si_doc.due_date = doc.get('posting_date')
+<<<<<<< HEAD
 				name_list = submit_invoice(si_doc, name, doc, name_list)
+=======
+				submit_invoice(si_doc, name, doc)
+				name_list.append(name)
+>>>>>>> 95d706d57b6cac6113b64196e32dafd821e302b7
 			else:
 				name_list.append(name)
 
@@ -474,11 +479,16 @@ def validate_item(doc):
 			frappe.db.commit()
 
 
+<<<<<<< HEAD
 def submit_invoice(si_doc, name, doc, name_list):
+=======
+def submit_invoice(si_doc, name, doc):
+>>>>>>> 95d706d57b6cac6113b64196e32dafd821e302b7
 	try:
 		si_doc.insert()
 		si_doc.submit()
 		frappe.db.commit()
+<<<<<<< HEAD
 		name_list.append(name)
 	except Exception as e:
 		if frappe.message_log: frappe.message_log.pop()
@@ -500,3 +510,16 @@ def save_invoice(e, si_doc, name, name_list):
 		frappe.log_error(frappe.get_traceback())
 
 	return name_list
+=======
+	except Exception as e:
+		if frappe.message_log: frappe.message_log.pop()
+		frappe.db.rollback()
+		save_invoice(e, si_doc, name)
+
+def save_invoice(e, si_doc, name):
+	if not frappe.db.exists('Sales Invoice', {'offline_pos_name': name}):
+		si_doc.docstatus = 0
+		si_doc.flags.ignore_mandatory = True
+		si_doc.due_date = si_doc.posting_date
+		si_doc.insert()
+>>>>>>> 95d706d57b6cac6113b64196e32dafd821e302b7

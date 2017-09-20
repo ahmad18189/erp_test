@@ -393,7 +393,11 @@ class PaymentEntry(AccountsController):
 			if self.payment_type=="Receive":
 				against_account = self.paid_to
 			else:
+<<<<<<< HEAD
 				against_account = self.paid_from
+=======
+				 against_account = self.paid_from
+>>>>>>> 95d706d57b6cac6113b64196e32dafd821e302b7
 
 
 			party_gl_dict = self.get_gl_dict({

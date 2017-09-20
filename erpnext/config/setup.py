@@ -43,6 +43,7 @@ def get_data():
 				},
 			]
 		},
+<<<<<<< HEAD
 		{
 			"label": _("Help"),
 			"items": [
@@ -73,6 +74,38 @@ def get_data():
 				},
 			]
 		},
+=======
+		# {
+		# 	"label": _("Help"),
+		# 	"items": [
+		# 		{
+		# 			"type": "help",
+		# 			"name": _("Data Import and Export"),
+		# 			"youtube_id": "6wiriRKPhmg"
+		# 		},
+		# 		{
+		# 			"type": "help",
+		# 			"label": _("Setting up Email"),
+		# 			"youtube_id": "YFYe0DrB95o"
+		# 		},
+		# 		{
+		# 			"type": "help",
+		# 			"label": _("Printing and Branding"),
+		# 			"youtube_id": "cKZHcx1znMc"
+		# 		},
+		# 		{
+		# 			"type": "help",
+		# 			"label": _("Users and Permissions"),
+		# 			"youtube_id": "fnBoRhBrwR4"
+		# 		},
+		# 		{
+		# 			"type": "help",
+		# 			"label": _("Workflow"),
+		# 			"youtube_id": "yObJUg9FxFs"
+		# 		},
+		# 	]
+		# },
+>>>>>>> 95d706d57b6cac6113b64196e32dafd821e302b7
 		{
 			"label": _("Customize"),
 			"icon": "fa fa-glass",

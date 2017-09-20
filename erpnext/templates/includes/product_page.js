@@ -73,7 +73,11 @@ frappe.ready(function() {
 			}
 		}
 
+<<<<<<< HEAD
 		if (window.location.search == ("?variant=" + item_code) || window.location.search.includes(item_code)) {
+=======
+		if (window.location.search.indexOf(item_code)!==-1) {
+>>>>>>> 95d706d57b6cac6113b64196e32dafd821e302b7
 			return;
 		}
 

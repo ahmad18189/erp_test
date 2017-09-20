@@ -1,7 +1,11 @@
 # Copyright (c) 2015, Frappe Technologies Pvt. Ltd. and Contributors
 # License: GNU General Public License v3. See license.txt
 
+<<<<<<< HEAD
 from __future__ import print_function, unicode_literals
+=======
+from __future__ import unicode_literals
+>>>>>>> 95d706d57b6cac6113b64196e32dafd821e302b7
 import frappe, erpnext
 
 def execute():
@@ -35,11 +39,19 @@ def execute():
 				voucher.make_gl_entries()
 				frappe.db.commit()
 			except Exception as e:
+<<<<<<< HEAD
 				print(frappe.get_traceback())
 				rejected.append([voucher_type, voucher_no])
 				frappe.db.rollback()
 
 		print(rejected)
+=======
+				print frappe.get_traceback()
+				rejected.append([voucher_type, voucher_no])
+				frappe.db.rollback()
+
+		print rejected
+>>>>>>> 95d706d57b6cac6113b64196e32dafd821e302b7
 
 def set_warehouse_for_stock_account(warehouse_account):
 	for account in warehouse_account:

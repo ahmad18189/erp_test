@@ -207,6 +207,7 @@ def get_data():
 				},
 			]
 		},
+<<<<<<< HEAD
 		{
 			"label": _("Help"),
 			"items": [
@@ -232,4 +233,31 @@ def get_data():
 				},
 			]
 		},
+=======
+		# {
+		# 	"label": _("Help"),
+		# 	"items": [
+		# 		{
+		# 			"type": "help",
+		# 			"label": _("Customer and Supplier"),
+		# 			"youtube_id": "anoGi_RpQ20"
+		# 		},
+		# 		{
+		# 			"type": "help",
+		# 			"label": _("Material Request to Purchase Order"),
+		# 			"youtube_id": "4TN9kPyfIqM"
+		# 		},
+		# 		{
+		# 			"type": "help",
+		# 			"label": _("Purchase Order to Payment"),
+		# 			"youtube_id": "EK65tLdVUDk"
+		# 		},
+		# 		{
+		# 			"type": "help",
+		# 			"label": _("Managing Subcontracting"),
+		# 			"youtube_id": "ThiMCC2DtKo"
+		# 		},
+		# 	]
+		# },
+>>>>>>> 95d706d57b6cac6113b64196e32dafd821e302b7
 	]

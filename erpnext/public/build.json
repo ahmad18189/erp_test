@@ -1,15 +1,22 @@
 {
     "css/erpnext.css": [
+<<<<<<< HEAD
         "public/css/erpnext.css",
         "public/css/dhtmlxgantt.css"
+=======
+        "public/css/erpnext.css"
+>>>>>>> 95d706d57b6cac6113b64196e32dafd821e302b7
     ],
     "js/erpnext-web.min.js": [
         "public/js/website_utils.js",
         "public/js/shopping_cart.js"
     ],
     "js/erpnext.min.js": [
+<<<<<<< HEAD
         "public/js/loader.js",
         "public/js/dhtmlxgantt.js",
+=======
+>>>>>>> 95d706d57b6cac6113b64196e32dafd821e302b7
         "public/js/conf.js",
         "public/js/utils.js",
         "public/js/queries.js",
@@ -42,4 +49,8 @@
         "stock/dashboard/item_dashboard_list.html",
         "stock/dashboard/item_dashboard.js"
     ]
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 95d706d57b6cac6113b64196e32dafd821e302b7

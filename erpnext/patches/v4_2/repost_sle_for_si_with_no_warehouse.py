@@ -1,7 +1,11 @@
 # Copyright (c) 2013, Web Notes Technologies Pvt. Ltd. and Contributors
 # License: GNU General Public License v3. See license.txt
 
+<<<<<<< HEAD
 from __future__ import print_function, unicode_literals
+=======
+from __future__ import unicode_literals
+>>>>>>> 95d706d57b6cac6113b64196e32dafd821e302b7
 import frappe
 from erpnext.stock.stock_ledger import NegativeStockError
 
@@ -28,7 +32,11 @@ def execute():
 			frappe.local.stockledger_exceptions = None
 			frappe.db.rollback()
 
+<<<<<<< HEAD
 	print("Failed to repost: ", failed_list)
+=======
+	print "Failed to repost: ", failed_list
+>>>>>>> 95d706d57b6cac6113b64196e32dafd821e302b7
 					
 		
 	

@@ -16,7 +16,11 @@ def get_data():
 			},
 			{
 				'label': _('Sales'),
+<<<<<<< HEAD
 				'items': ['Sales Order', 'Delivery Note', 'Sales Invoice']
+=======
+				'items': ['Sales Invoice']
+>>>>>>> 95d706d57b6cac6113b64196e32dafd821e302b7
 			},
 			{
 				'label': _('Purchase'),

@@ -12,7 +12,11 @@ $(document).bind('toolbar_setup', function() {
 
 
 	$('.navbar-home').html('<img class="erpnext-icon" src="'+
+<<<<<<< HEAD
 			frappe.urllib.get_base_url()+'/assets/erpnext/images/erp-icon.svg" />');
+=======
+			frappe.urllib.get_base_url()+'/assets/erpnext/images/favicon.png" />');
+>>>>>>> 95d706d57b6cac6113b64196e32dafd821e302b7
 
 	$('[data-link="docs"]').attr("href", "https://frappe.github.io/erpnext/")
 	$('[data-link="issues"]').attr("href", "https://github.com/frappe/erpnext/issues")

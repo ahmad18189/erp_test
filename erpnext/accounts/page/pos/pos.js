@@ -426,6 +426,7 @@ erpnext.pos.PointOfSale = erpnext.taxes_and_totals.extend({
 		});
 
 		this.serach_item.make_input();
+<<<<<<< HEAD
 		
 		this.serach_item.$input.on("keypress", function (event) {
 
@@ -436,6 +437,13 @@ erpnext.pos.PointOfSale = erpnext.taxes_and_totals.extend({
 					me.make_item_list();
 				}				
 			}, 400);
+=======
+		this.serach_item.$input.on("keyup", function () {
+			setTimeout(function () {
+				me.items = me.get_items();
+				me.make_item_list();
+			}, 1000);
+>>>>>>> 95d706d57b6cac6113b64196e32dafd821e302b7
 		});
 
 		this.search_item_group = this.wrapper.find('.search-item-group');
@@ -732,7 +740,18 @@ erpnext.pos.PointOfSale = erpnext.taxes_and_totals.extend({
 
 					input = input.toLowerCase();
 					item = this.get_item(item.value);
+<<<<<<< HEAD
 					return item.searchtext.includes(input)
+=======
+					var searchtext =
+						Object.keys(item)
+							.filter(key => ['customer_name', 'customer_group', 'value', 'label', 'email_id', 'phone', 'mobile_no'].includes(key))
+							.map(key => item[key])
+							.join(" ")
+							.toLowerCase();
+
+					return searchtext.includes(input)
+>>>>>>> 95d706d57b6cac6113b64196e32dafd821e302b7
 				},
 				item: function (item, input) {
 					var d = this.get_item(item.value);
@@ -806,11 +825,15 @@ erpnext.pos.PointOfSale = erpnext.taxes_and_totals.extend({
 				territory: c.territory,
 				phone: contact ? contact["phone"] : '',
 				mobile_no: contact ? contact["mobile_no"] : '',
+<<<<<<< HEAD
 				email_id: contact ? contact["email_id"] : '',
 				searchtext: ['customer_name', 'customer_group', 'value',
 					'label', 'email_id', 'phone', 'mobile_no']
 					.map(key => c[key]).join(' ')
 					.toLowerCase()
+=======
+				email_id: contact ? contact["email_id"] : ''
+>>>>>>> 95d706d57b6cac6113b64196e32dafd821e302b7
 			}
 		});
 

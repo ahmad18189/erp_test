@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 from __future__ import print_function, unicode_literals
+=======
+from __future__ import unicode_literals
+>>>>>>> 95d706d57b6cac6113b64196e32dafd821e302b7
 import frappe
 from frappe.utils import encode
 
@@ -25,7 +29,11 @@ def execute():
 		try:
 			file.validate_file()
 		except IOError:
+<<<<<<< HEAD
 			print(encode(item.website_image), "does not exist")
+=======
+			print encode(item.website_image), "does not exist"
+>>>>>>> 95d706d57b6cac6113b64196e32dafd821e302b7
 			file.delete()
 			item.db_set("website_image", None, update_modified=False)
 
