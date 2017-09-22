@@ -52,6 +52,14 @@ def get_data():
 			"link": "List/Project"
 		},
 		{
+			"module_name": "Forecasting and Planning",
+			"_doctype": "Project",
+			"color": "#183A60",
+			"icon": "octicon octicon-rocket",
+			"type": "link",
+			"link": "http://165.227.155.136/desk#forecasting-and-plan"
+		},
+		{
 			"module_name": "Issue",
 			"color": "#183A60",
 			"icon": "octicon octicon-issue-opened",
