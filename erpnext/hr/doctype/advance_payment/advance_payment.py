@@ -33,8 +33,8 @@ class AdvancePayment(Document):
 		if self.employee :
 			ss_employees = frappe.get_doc("Salary Structure Employee",{"employee":self.employee})
 			self.base = ss_employees.base
-			if self.amount > flt(ss_employees.base)/3.0:
-				frappe.throw(_('Amount {0} is biger than Expected {1}').format(self.amount,flt(ss_employees.base)/3.0))
+			if self.amount > flt(ss_employees.base):
+				frappe.throw(_('Amount {0} is biger than Expected {1}').format(self.amount,flt(ss_employees.base)))
 		
 	
 	def valdate_duplicate(self):
@@ -58,10 +58,15 @@ class AdvancePayment(Document):
 		
 	def get_base(self):
 		if self.employee :
-			ss_employees = frappe.get_doc("Salary Structure Employee",{"employee":self.employee})
-			self.base = ss_employees.base
-			self.amount = flt(ss_employees.base)/3.0
-			self.month = getdate(self.date).month
+			ss_employees_l = frappe.get_list("Salary Structure Employee",filters={"employee":self.employee})
+			if ss_employees_l:
+				ss_employees = frappe.get_doc("Salary Structure Employee",{"employee":self.employee})
+				if ss_employees != None :
+					self.base = ss_employees.base
+					self.amount = flt(ss_employees.base)/3.0
+					self.month = getdate(self.date).month
+			else :
+				frappe.throw(_('No Active Salary Structer for Employee ')+self.employee)
 		return {"base":self.base ,"amount":self.amount,"day":getdate(self.date).day}
 	
 	
