@@ -964,11 +964,7 @@
  "istable": 0, 
  "max_attachments": 0, 
  "menu_index": 0, 
-<<<<<<< HEAD
  "modified": "2017-07-17 15:47:23.255142", 
-=======
- "modified": "2017-09-04 17:08:13.249979", 
->>>>>>> 95d706d57b6cac6113b64196e32dafd821e302b7
  "modified_by": "Administrator", 
  "module": "HR", 
  "name": "Expense Claim", 

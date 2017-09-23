@@ -67,11 +67,7 @@ class Customer(TransactionBase):
 		'''If Customer created from Lead, update lead status to "Converted"
 		update Customer link in Quotation, Opportunity'''
 		if self.lead_name:
-<<<<<<< HEAD
-			frappe.db.set_value('Lead', self.lead_name, 'status', 'Converted', update_modified=False)
-=======
 		 	frappe.db.set_value('Lead', self.lead_name, 'status', 'Converted', update_modified=False)
->>>>>>> 95d706d57b6cac6113b64196e32dafd821e302b7
 
 			for doctype in ('Opportunity', 'Quotation'):
 				for d in frappe.get_all(doctype, {'lead': self.lead_name}):
@@ -94,12 +90,6 @@ class Customer(TransactionBase):
 
 			lead = frappe.db.get_value("Lead", self.lead_name, ["lead_name", "email_id", "phone", "mobile_no", "gender", "salutation"], as_dict=True)
 
-<<<<<<< HEAD
-			if not lead.lead_name:
-				frappe.throw(_("Please mention the Lead Name in Lead {0}").format(self.lead_name))
-
-=======
->>>>>>> 95d706d57b6cac6113b64196e32dafd821e302b7
 			lead.lead_name = lead.lead_name.split(" ")
 			lead.first_name = lead.lead_name[0]
 			lead.last_name = " ".join(lead.lead_name[1:])

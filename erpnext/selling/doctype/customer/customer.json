@@ -144,8 +144,6 @@
    "bold": 0, 
    "collapsible": 0, 
    "columns": 0, 
-<<<<<<< HEAD
-=======
    "fieldname": "abbr", 
    "fieldtype": "Data", 
    "hidden": 0, 
@@ -176,7 +174,6 @@
    "bold": 0, 
    "collapsible": 0, 
    "columns": 0, 
->>>>>>> 95d706d57b6cac6113b64196e32dafd821e302b7
    "depends_on": "eval:doc.customer_type != 'Company'", 
    "fieldname": "gender", 
    "fieldtype": "Link", 
@@ -1235,13 +1232,8 @@
  "issingle": 0, 
  "istable": 0, 
  "max_attachments": 0, 
-<<<<<<< HEAD
- "modified": "2017-07-24 00:55:07.445783", 
- "modified_by": "Administrator", 
-=======
  "modified": "2017-09-06 13:06:44.204363", 
  "modified_by": "yvonnendutaw@gmail.com", 
->>>>>>> 95d706d57b6cac6113b64196e32dafd821e302b7
  "module": "Selling", 
  "name": "Customer", 
  "name_case": "Title Case", 
@@ -1428,11 +1420,7 @@
    "write": 0
   }
  ], 
-<<<<<<< HEAD
- "quick_entry": 1, 
-=======
  "quick_entry": 0, 
->>>>>>> 95d706d57b6cac6113b64196e32dafd821e302b7
  "read_only": 0, 
  "read_only_onload": 0, 
  "search_fields": "customer_name,customer_group,territory", 

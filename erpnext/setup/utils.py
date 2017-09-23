@@ -83,12 +83,8 @@ def get_exchange_rate(from_currency, to_currency, transaction_date=None):
 
 		if not value:
 			import requests
-<<<<<<< HEAD
-			api_url = "http://api.fixer.io/{0}".format(transaction_date)
-			response = requests.get(api_url, params={
-=======
+
 			response = requests.get("http://api.fixer.io/latest", params={
->>>>>>> 95d706d57b6cac6113b64196e32dafd821e302b7
 				"base": from_currency,
 				"symbols": to_currency
 			})

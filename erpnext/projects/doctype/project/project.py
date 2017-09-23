@@ -26,16 +26,10 @@ class Project(Document):
 			order by total_hours desc''', self.name, as_dict=True))
 
 	def __setup__(self):
-<<<<<<< HEAD
-		self.onload()
-=======
 		self.onload
 		
 	#Autogenerate Job code
 #	def project_jobcode(self);
-		
-	
->>>>>>> 95d706d57b6cac6113b64196e32dafd821e302b7
 
 	def load_tasks(self):
 		"""Load `tasks` from the database"""
