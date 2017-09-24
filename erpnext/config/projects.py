@@ -19,6 +19,11 @@ def get_data():
 				},
 				{
 					"type": "doctype",
+					"name": "Risk",
+					"description": _("Project activity / Risk."),
+				},
+				{
+					"type": "doctype",
 					"name": "Project Type",
 					"description": _("Define Project type."),
 				},
@@ -48,11 +53,7 @@ def get_data():
 					"type": "doctype",
 					"name": "Activity Cost",
 					"description": _("Cost of various activities"),
-<<<<<<< HEAD
-				}
-=======
 				},
->>>>>>> 95d706d57b6cac6113b64196e32dafd821e302b7
 			]
 		},
 		{
@@ -71,23 +72,18 @@ def get_data():
 					"name": "Project wise Stock Tracking",
 					"doctype": "Project"
 				},
-				{
-					"type": "page",
-					"name": "forecasting-and-plan",
-					"label": _("Forecasting and Planning"),
-				}
+
 			]
 		},
-		{
-			#~ "label": _("Help"),
-			#~ "icon": "fa fa-facetime-video",
-			#~ "items": [
-				#~ {
-					#~ "type": "help",
-					#~ "label": _("Managing Projects"),
-					#~ "youtube_id": "egxIGwtoKI4"
-				#~ },
-			#~ ]
-		},
-
+		# {
+		# 	"label": _("Help"),
+		# 	"icon": "fa fa-facetime-video",
+		# 	"items": [
+		# 		{
+		# 			"type": "help",
+		# 			"label": _("Managing Projects"),
+		# 			"youtube_id": "egxIGwtoKI4"
+		# 		},
+		# 	]
+		# },
 	]
