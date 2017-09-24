@@ -125,7 +125,6 @@ $.extend(erpnext.utils, {
 				}
 			});
 		}
-<<<<<<< HEAD
 	},
 
 	/**
@@ -153,9 +152,7 @@ $.extend(erpnext.utils, {
 		}
 		return rows;
 	},
-=======
-	}
->>>>>>> 95d706d57b6cac6113b64196e32dafd821e302b7
+
 });
 
 erpnext.utils.map_current_doc = function(opts) {
