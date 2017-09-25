@@ -213,6 +213,13 @@ class Project(Document):
 				frappe.sendmail(user.user, subject=_("Project Collaboration Invitation"), content=content.format(*messages))
 				user.welcome_email_sent=1
 
+	def get_risk(self):
+		if self.customer:
+			clint_risk = frappe.db.get_value('Risk', {'client_name': self.customer}, 'risk_score')
+			return clint_risk
+		else:
+			return ""
+		
 	def on_update(self):
 		self.load_tasks()
 		self.sync_tasks()

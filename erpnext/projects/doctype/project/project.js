@@ -98,6 +98,18 @@ frappe.ui.form.on("Project", {
 					{'activity_type': activity_type, 'project': frm.doc.name, 'status': ["!=", "Cancelled"]});
 			});
 		}
+	},
+	customer:function(frm) {
+		frm.set_value("risk_status","");
+		frappe.call({
+			method: "get_risk",
+			doc:frm.doc,
+			callback: function(r) {
+				if(r.message) {
+					frm.set_value("risk_status", r.message);
+				}
+			}
+		})
 	}
 });
 

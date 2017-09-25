@@ -19,7 +19,7 @@ def get_data():
 			"type": "link",
 			"link": "List/Customer"
 		},
-        {
+        	{
 			"module_name": "Risk Assessment",
 			"_doctype": "Risk",
 			"color": "#183A60",

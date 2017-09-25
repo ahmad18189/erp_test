@@ -19,11 +19,6 @@ def get_data():
 				},
 				{
 					"type": "doctype",
-					"name": "Risk",
-					"description": _("Project activity / Risk."),
-				},
-				{
-					"type": "doctype",
 					"name": "Project Type",
 					"description": _("Define Project type."),
 				},
@@ -72,7 +67,6 @@ def get_data():
 					"name": "Project wise Stock Tracking",
 					"doctype": "Project"
 				},
-
 			]
 		},
 		# {

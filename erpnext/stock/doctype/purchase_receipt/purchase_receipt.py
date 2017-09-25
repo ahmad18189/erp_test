@@ -84,15 +84,9 @@ class PurchaseReceipt(BuyingController):
 
 	def po_required(self):
 		if frappe.db.get_value("Buying Settings", None, "po_required") == 'Yes':
-<<<<<<< HEAD
-			for d in self.get('items'):
-				if not d.purchase_order:
-					frappe.throw(_("Purchase Order number required for Item {0}").format(d.item_code))
-=======
 			 for d in self.get('items'):
 				 if not d.purchase_order:
 					 frappe.throw(_("Purchase Order number required for Item {0}").format(d.item_code))
->>>>>>> 95d706d57b6cac6113b64196e32dafd821e302b7
 
 	def get_already_received_qty(self, po, po_detail):
 		qty = frappe.db.sql("""select sum(qty) from `tabPurchase Receipt Item`

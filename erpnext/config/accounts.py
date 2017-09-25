@@ -459,29 +459,6 @@ def get_data():
 				},
 			]
 		},
-<<<<<<< HEAD
-		{
-			"label": _("Help"),
-			"icon": "fa fa-facetime-video",
-			"items": [
-				{
-					"type": "help",
-					"label": _("Chart of Accounts"),
-					"youtube_id": "DyR-DST-PyA"
-				},
-				{
-					"type": "help",
-					"label": _("Opening Accounting Balance"),
-					"youtube_id": "kdgM20Q-q68"
-				},
-				{
-					"type": "help",
-					"label": _("Setting up Taxes"),
-					"youtube_id": "nQ1zZdPgdaQ"
-				}
-			]
-		}
-=======
 		# {
 		# 	"label": _("Help"),
 		# 	"icon": "fa fa-facetime-video",
@@ -503,5 +480,4 @@ def get_data():
 		# 		}
 		# 	]
 		# }
->>>>>>> 95d706d57b6cac6113b64196e32dafd821e302b7
 	]
